@@ -16,7 +16,7 @@ export default {
                 <div>&#47;</div>
                 <div> 8 SPEAKERS</div>
             </div>
-            <button id="btn-register">
+            <button class="btn register">
                 REGISTER ONLINE
             </button>
         </div>
@@ -60,14 +60,13 @@ section {
             height: 40px;
         }
 
-        #btn-register {
-            border: none;
+        .register {
             background-color: $cube-scarlet;
-            padding: 15px 20px;
-            color: white;
             font-weight: 800;
             border-radius: 5px;
             margin-top: 50px;
+            padding: 15px 20px;
+            color: white;
         }
     }
 }
