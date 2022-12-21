@@ -1,12 +1,14 @@
 <script>
 import AppJumbo from './AppJumbo.vue';
 import AppInfo from './AppInfo.vue';
+import AppCountdown from './AppCountdown.vue';
 
 export default {
     name: "AppMain",
     components: {
         AppJumbo,
         AppInfo,
+        AppCountdown,
     }
 }
 </script>
@@ -15,6 +17,7 @@ export default {
     <main>
         <AppJumbo />
         <AppInfo />
+        <AppCountdown />
     </main>
 </template>
 
