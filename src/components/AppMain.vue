@@ -5,6 +5,7 @@ import AppCountdown from './AppCountdown.vue';
 import AppSpeaker from './AppSpeaker.vue';
 import AppProgram from './AppProgram.vue';
 import AppMap from './AppMap.vue';
+import AppLocation from './AppLocation.vue';
 
 export default {
     name: "AppMain",
@@ -15,6 +16,7 @@ export default {
         AppSpeaker,
         AppProgram,
         AppMap,
+        AppLocation,
     }
 }
 </script>
@@ -27,6 +29,7 @@ export default {
         <AppSpeaker />
         <AppProgram />
         <AppMap />
+        <AppLocation />
     </main>
 </template>
 
