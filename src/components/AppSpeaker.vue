@@ -69,7 +69,7 @@ section {
             .cards {
                 width: 250px;
                 height: 200px;
-                line-height: 20px;
+                line-height: 30px;
 
                 img {
                     width: 100%;
@@ -78,7 +78,7 @@ section {
 
                 .name-cards {
                     text-align: center;
-                    font-size: 12px;
+                    font-size: 14px;
                     color: $cube-mineShaft;
                     font-weight: 700;
                     letter-spacing: 2px;
@@ -86,8 +86,9 @@ section {
 
                 .role-cards {
                     text-align: center;
-                    font-size: 10px;
+                    font-size: 12px;
                     color: $median-naturalGrey;
+                    font-family: 'Times New Roman', Times, serif;
                 }
             }
         }
