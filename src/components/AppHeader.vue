@@ -55,7 +55,7 @@ export default {
         <section>
             <div class="topbar container">
                 <div class="logo">
-                    <h1>THE KEYNOTE</h1>
+                    <img src="img/logo.png" alt="">
                 </div>
                 <div class="navbar-block">
                     <ul class="navbar">
@@ -99,8 +99,8 @@ section {
             justify-content: flex-start;
             align-items: center;
 
-            h1 {
-                font-size: 17px;
+            img {
+                width: 50%;
             }
         }
 
