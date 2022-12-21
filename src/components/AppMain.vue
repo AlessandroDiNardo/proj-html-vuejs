@@ -3,6 +3,7 @@ import AppJumbo from './AppJumbo.vue';
 import AppInfo from './AppInfo.vue';
 import AppCountdown from './AppCountdown.vue';
 import AppSpeaker from './AppSpeaker.vue';
+import AppProgram from './AppProgram.vue';
 
 export default {
     name: "AppMain",
@@ -11,6 +12,7 @@ export default {
         AppInfo,
         AppCountdown,
         AppSpeaker,
+        AppProgram,
     }
 }
 </script>
@@ -21,6 +23,7 @@ export default {
         <AppInfo />
         <AppCountdown />
         <AppSpeaker />
+        <AppProgram />
     </main>
 </template>
 
