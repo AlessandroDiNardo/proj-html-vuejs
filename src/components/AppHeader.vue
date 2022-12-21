@@ -52,21 +52,23 @@ export default {
 
 <template>
     <header>
-        <section class="topbar container">
-            <div class="logo">
-                <h1>THE KEYNOTE</h1>
-            </div>
-            <div class="navbar-block">
-                <ul class="navbar">
-                    <li v-for="(elem, index) in elemNav" :key="index">
-                        <a :href="elem.url" :class="{ active: elem.current }">
-                            {{ elem.text }}
-                        </a>
-                    </li>
-                </ul>
-                <div id="icon-vert">&vert;</div>
-                <div id="icon-glass">
-                    <font-awesome-icon icon="fa-solid fa-magnifying-glass" />
+        <section>
+            <div class="topbar container">
+                <div class="logo">
+                    <h1>THE KEYNOTE</h1>
+                </div>
+                <div class="navbar-block">
+                    <ul class="navbar">
+                        <li v-for="(elem, index) in elemNav" :key="index">
+                            <a :href="elem.url" :class="{ active: elem.current }">
+                                {{ elem.text }}
+                            </a>
+                        </li>
+                    </ul>
+                    <div id="icon-vert">&vert;</div>
+                    <div id="icon-glass">
+                        <font-awesome-icon icon="fa-solid fa-magnifying-glass" />
+                    </div>
                 </div>
             </div>
         </section>
@@ -77,57 +79,61 @@ export default {
 @use '../style/partials/variables.scss' as *;
 @use '../style/general.scss' as *;
 
-.topbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+section {
+    background-color: $cube-white;
     width: 100%;
+    position: fixed;
+    z-index: 999;
 
-    // debug
-    height: 100px;
-
-    // logo block
-    .logo {
-        width: 20%;
-        height: 100%;
+    .topbar {
         display: flex;
         justify-content: center;
         align-items: center;
+        padding: 30px 0;
 
-        h1 {
-            font-size: 20px;
-        }
-    }
-
-    // navbar block
-    .navbar-block {
-        width: 80%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-        font-size: 9px;
-        font-weight: 800;
-
-        .navbar {
+        // logo block
+        .logo {
+            width: 30%;
+            height: 100%;
             display: flex;
+            justify-content: flex-start;
             align-items: center;
-            gap: 35px;
-            list-style: none;
 
-            li a {
-                text-decoration: none;
-                color: $median-naturalGrey;
+            h1 {
+                font-size: 17px;
+            }
+        }
+
+        // navbar block
+        .navbar-block {
+            width: 70%;
+            height: 100%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 20px;
+            font-size: 9px;
+            font-weight: 800;
+
+            .navbar {
                 display: flex;
                 align-items: center;
-                height: 30px;
+                gap: 50px;
+                list-style: none;
 
-                &.active,
-                &:hover {
-                    cursor: pointer;
-                    color: $material-thunderbird;
-                    border-bottom: 4px solid $material-thunderbird;
+                li a {
+                    text-decoration: none;
+                    color: $median-naturalGrey;
+                    display: flex;
+                    align-items: center;
+                    height: 30px;
+
+                    &.active,
+                    &:hover {
+                        cursor: pointer;
+                        color: $material-thunderbird;
+                        border-bottom: 4px solid $material-thunderbird;
+                    }
                 }
             }
         }
