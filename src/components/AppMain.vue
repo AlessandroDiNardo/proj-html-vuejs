@@ -6,6 +6,7 @@ import AppSpeaker from './AppSpeaker.vue';
 import AppProgram from './AppProgram.vue';
 import AppMap from './AppMap.vue';
 import AppLocation from './AppLocation.vue';
+import AppNews from './AppNews.vue';
 
 export default {
     name: "AppMain",
@@ -17,6 +18,7 @@ export default {
         AppProgram,
         AppMap,
         AppLocation,
+        AppNews,
     }
 }
 </script>
@@ -30,6 +32,7 @@ export default {
         <AppProgram />
         <AppMap />
         <AppLocation />
+        <AppNews />
     </main>
 </template>
 
