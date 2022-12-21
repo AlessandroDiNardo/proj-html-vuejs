@@ -11,7 +11,7 @@ export default {
             <button>Satellite</button>
         </div>
         <div class="bottom">
-            <button id="icon-person">
+            <button>
                 <font-awesome-icon icon="fa-solid fa-person" />
             </button>
             <button>+</button>
@@ -35,7 +35,6 @@ section {
         height: 100%;
         display: flex;
         flex-direction: column;
-        gap: 20px;
         justify-content: flex-end;
         align-items: flex-end;
         position: absolute;
@@ -46,9 +45,11 @@ section {
             font-size: 15px;
             width: 40px;
             color: #fdbf2d;
+            margin-bottom: 20px;
 
             &:nth-last-child(-n+2) {
                 color: $material-black;
+                margin-bottom: 0;
             }
         }
     }
