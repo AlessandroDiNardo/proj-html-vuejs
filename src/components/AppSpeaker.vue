@@ -34,6 +34,14 @@ export default {
     <section>
         <div class="container">
             <h1>SPEAKERS</h1>
+            <div class="btn">
+                <button>
+                    <font-awesome-icon icon="fa-solid fa-angle-left" />
+                </button>
+                <button>
+                    <font-awesome-icon icon="fa-solid fa-angle-right" />
+                </button>
+            </div>
             <div class="cards-block">
                 <div class="cards" v-for="(elem, index)  in elemImg" :key="index">
                     <img :src="elem.img" alt="">
@@ -58,6 +66,26 @@ section {
 
     .container {
         padding: 100px 0;
+        position: relative;
+
+        .btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            position: absolute;
+            top: 20%;
+            right: 0;
+
+            button {
+                background-color: $cube-scarlet;
+                color: white;
+                padding: 10px 13px;
+                border: none;
+                font-size: 10px;
+                cursor: pointer;
+            }
+        }
 
         .cards-block {
             margin-top: 50px;
@@ -65,6 +93,7 @@ section {
             justify-content: center;
             align-items: center;
             gap: 20px;
+
 
             .cards {
                 width: 250px;
