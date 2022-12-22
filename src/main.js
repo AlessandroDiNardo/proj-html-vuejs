@@ -9,10 +9,11 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 /* import specific icons */
-import { faBolt, faMagnifyingGlass, faPaperPlane, faQuestion, faTrophy, faUser, faClock, faPerson, faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faBolt, faMagnifyingGlass, faPaperPlane, faQuestion, faTrophy, faUser, faClock, faPerson, faPhone, faEnvelope, faAngleLeft, faAngleRight, faPlay, faSignal, faGear } from '@fortawesome/free-solid-svg-icons'
+import { faTwitter } from '@fortawesome/free-brands-svg-icons'
 
 /* add icons to the library */
-library.add(faMagnifyingGlass, faTrophy, faBolt, faQuestion, faClock, faPaperPlane, faUser, faPerson, faPhone, faEnvelope)
+library.add(faMagnifyingGlass, faTrophy, faBolt, faQuestion, faClock, faPaperPlane, faUser, faPerson, faPhone, faEnvelope, faAngleLeft, faAngleRight, faPlay, faSignal, faGear, faTwitter)
 
 createApp(App)
     .component('font-awesome-icon', FontAwesomeIcon)

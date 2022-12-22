@@ -8,6 +8,7 @@ import AppMap from './AppMap.vue';
 import AppLocation from './AppLocation.vue';
 import AppNews from './AppNews.vue';
 import AppTickets from './AppTickets.vue';
+import AppPresentation from './AppPresentation.vue';
 
 export default {
     name: "AppMain",
@@ -20,7 +21,8 @@ export default {
         AppMap,
         AppLocation,
         AppNews,
-        AppTickets
+        AppTickets,
+        AppPresentation
     }
 }
 </script>
@@ -36,6 +38,7 @@ export default {
         <AppLocation />
         <AppNews />
         <AppTickets />
+        <AppPresentation />
     </main>
 </template>
 
