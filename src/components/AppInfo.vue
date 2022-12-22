@@ -93,6 +93,8 @@ section {
                 margin-bottom: 15px;
                 color: $median-naturalGrey;
                 font-weight: 100;
+                font-size: 12px;
+                font-family: 'Times New Roman', Times, serif;
             }
 
             a {
