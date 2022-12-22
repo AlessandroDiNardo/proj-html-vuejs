@@ -40,7 +40,7 @@ export default {
 
 section {
     background-image: url(../../public/img/coutdown-bg1.jpg);
-    height: 500px;
+    background-position: -100px;
 
     .container {
         height: 100%;
@@ -48,6 +48,7 @@ section {
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        padding: 100px 0;
 
         .countdown {
             display: flex;
