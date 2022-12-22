@@ -131,8 +131,8 @@ section {
                     &.active,
                     &:hover {
                         cursor: pointer;
-                        color: $material-thunderbird;
-                        border-bottom: 4px solid $material-thunderbird;
+                        color: $cube-scarlet;
+                        border-bottom: 4px solid $cube-scarlet;
                     }
                 }
             }
